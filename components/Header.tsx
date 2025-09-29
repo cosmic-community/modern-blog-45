@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, PenSquare } from 'lucide-react'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -11,8 +11,11 @@ export default function Header() {
     <header className="border-b border-blue-100 bg-gradient-to-r from-blue-50 to-white shadow-sm">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-            📝 ModernBlog
+          <Link href="/" className="flex items-center gap-2 text-2xl font-bold">
+            <PenSquare className="w-6 h-6 text-blue-600" />
+            <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+              ModernBlog
+            </span>
           </Link>
           
           {/* Desktop Navigation */}
