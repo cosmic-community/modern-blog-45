@@ -9,18 +9,21 @@ export default function CategoryCard({ category }: CategoryCardProps) {
   return (
     <Link 
       href={`/categories/${category.slug}`}
-      className="block bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+      className="block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-blue-50 hover:border-blue-200"
     >
       {category.metadata?.category_image && (
-        <img
-          src={`${category.metadata.category_image.imgix_url}?w=800&h=400&fit=crop&auto=format,compress`}
-          alt={category.title}
-          className="w-full h-48 object-cover"
-        />
+        <div className="relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent z-10"></div>
+          <img
+            src={`${category.metadata.category_image.imgix_url}?w=800&h=400&fit=crop&auto=format,compress`}
+            alt={category.title}
+            className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
       )}
       
       <div className="p-6">
-        <h3 className="text-xl font-bold mb-2 hover:text-blue-600 transition-colors">
+        <h3 className="text-xl font-bold mb-2 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-800 hover:bg-clip-text hover:text-transparent transition-all duration-300">
           {category.title}
         </h3>
         {category.metadata?.description && (
