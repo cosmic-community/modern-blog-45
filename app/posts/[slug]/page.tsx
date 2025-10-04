@@ -136,7 +136,8 @@ export default async function PostPage({
       </header>
 
       {/* Post Content */}
-      <div className="prose prose-lg max-w-none prose-headings:bg-gradient-to-r prose-headings:from-green-600 prose-headings:to-green-800 prose-headings:bg-clip-text prose-headings:text-transparent prose-a:text-green-600 prose-a:no-underline hover:prose-a:text-green-700">
+      {/* Post Content */}
+      <div className="prose prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-headings:bg-gradient-to-r prose-headings:from-green-600 prose-headings:to-green-800 prose-headings:bg-clip-text prose-headings:text-transparent prose-p:text-gray-700 prose-p:leading-relaxed prose-a:text-green-600 prose-a:font-medium prose-a:no-underline hover:prose-a:text-green-700 hover:prose-a:underline prose-strong:text-gray-900 prose-strong:font-semibold prose-em:text-gray-700 prose-code:text-green-700 prose-code:bg-green-50 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:font-mono prose-code:text-sm prose-code:before:content-[''] prose-code:after:content-[''] prose-pre:bg-gray-900 prose-pre:text-gray-100 prose-pre:rounded-lg prose-pre:shadow-lg prose-blockquote:border-l-4 prose-blockquote:border-green-500 prose-blockquote:bg-green-50 prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:italic prose-ul:list-disc prose-ul:pl-6 prose-ol:list-decimal prose-ol:pl-6 prose-li:text-gray-700 prose-li:my-1 prose-img:rounded-lg prose-img:shadow-md">
         <ReactMarkdown>{post.metadata.content}</ReactMarkdown>
       </div>
 
