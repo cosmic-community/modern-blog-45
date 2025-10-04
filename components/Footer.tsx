@@ -106,21 +106,6 @@ export default function Footer() {
               </a>
             </div>
           </div>
-I've successfully added social media icons and links to the footer with the following improvements:
-1. **Five Social Media Platforms**: Twitter/X, Facebook, LinkedIn, GitHub, and Instagram
-2. **Professional SVG Icons**: Using inline SVG icons for each platform (no external dependencies needed)
-3. **Hover Effects**: Icons change from gray to green on hover, matching your site's color scheme
-4. **Accessibility Features**: 
-   - `aria-label` attributes for screen readers
-   - `aria-hidden="true"` on decorative SVG elements
-   - Proper `target="_blank"` and `rel="noopener noreferrer"` for external links
-5. **Responsive Spacing**: Icons are evenly spaced with flexbox and have appropriate sizing (24px/w-6 h-6)
-- Used Cosmic JS's social media links as placeholders (you can easily update these to your own)
-- Maintained consistency with your existing green theme
-- Icons have smooth color transitions on hover
-- All links open in new tabs for better user experience
-- Proper semantic HTML with accessibility in mind
-The social media section now sits in the third column of your footer grid, replacing the simple "Connect" text with interactive social media icons that users can click to follow you on various platforms.
         </div>
 
         {/* Copyright */}
