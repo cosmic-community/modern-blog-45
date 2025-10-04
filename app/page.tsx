@@ -35,8 +35,8 @@ export default async function Home() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Hero Section */}
       <div className="text-center mb-16 relative">
-        <div className="absolute inset-0 gradient-blue opacity-5 blur-3xl rounded-full"></div>
-        <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent relative z-10">
+        <div className="absolute inset-0 gradient-green opacity-5 blur-3xl rounded-full"></div>
+        <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent relative z-10">
           Welcome to Our Blog
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto relative z-10">
@@ -48,12 +48,12 @@ export default async function Home() {
       {categories.length > 0 && (
         <div className="mb-16">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">
               Browse by Category
             </h2>
             <Link 
               href="/categories" 
-              className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
+              className="text-green-600 hover:text-green-700 font-medium transition-colors"
             >
               View all →
             </Link>
@@ -68,7 +68,7 @@ export default async function Home() {
 
       {/* Latest Posts Section */}
       <div>
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">
           Latest Posts
         </h2>
         {posts.length === 0 ? (

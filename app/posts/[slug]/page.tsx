@@ -85,7 +85,7 @@ export default async function PostPage({
       {/* Featured Image */}
       {post.metadata?.featured_image && (
         <div className="relative rounded-xl overflow-hidden mb-8 shadow-2xl">
-          <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-green-900/20 to-transparent"></div>
           <img
             src={`${post.metadata.featured_image.imgix_url}?w=1600&h=800&fit=crop&auto=format,compress`}
             alt={post.title}
@@ -96,7 +96,7 @@ export default async function PostPage({
 
       {/* Post Header */}
       <header className="mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">
           {post.title}
         </h1>
         
@@ -104,13 +104,13 @@ export default async function PostPage({
           {post.metadata?.author && (
             <Link 
               href={`/authors/${post.metadata.author.slug}`}
-              className="flex items-center gap-2 hover:text-blue-600 transition-colors"
+              className="flex items-center gap-2 hover:text-green-600 transition-colors"
             >
               {post.metadata.author.metadata?.avatar && (
                 <img
                   src={`${post.metadata.author.metadata.avatar.imgix_url}?w=80&h=80&fit=crop&auto=format,compress`}
                   alt={post.metadata.author.title}
-                  className="w-10 h-10 rounded-full ring-2 ring-blue-100"
+                  className="w-10 h-10 rounded-full ring-2 ring-green-100"
                 />
               )}
               <span className="font-medium">{post.metadata.author.title}</span>
@@ -126,7 +126,7 @@ export default async function PostPage({
               <span>•</span>
               <Link 
                 href={`/categories/${post.metadata.category.slug}`}
-                className="px-3 py-1 bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 rounded-full font-medium hover:from-blue-200 hover:to-blue-300 transition-colors"
+                className="px-3 py-1 bg-gradient-to-r from-green-100 to-green-200 text-green-800 rounded-full font-medium hover:from-green-200 hover:to-green-300 transition-colors"
               >
                 {post.metadata.category.title}
               </Link>
@@ -136,23 +136,23 @@ export default async function PostPage({
       </header>
 
       {/* Post Content */}
-      <div className="prose prose-lg max-w-none prose-headings:bg-gradient-to-r prose-headings:from-blue-600 prose-headings:to-blue-800 prose-headings:bg-clip-text prose-headings:text-transparent prose-a:text-blue-600 prose-a:no-underline hover:prose-a:text-blue-700">
+      <div className="prose prose-lg max-w-none prose-headings:bg-gradient-to-r prose-headings:from-green-600 prose-headings:to-green-800 prose-headings:bg-clip-text prose-headings:text-transparent prose-a:text-green-600 prose-a:no-underline hover:prose-a:text-green-700">
         <ReactMarkdown>{post.metadata.content}</ReactMarkdown>
       </div>
 
       {/* Author Bio */}
       {post.metadata?.author && post.metadata.author.metadata?.bio && (
-        <div className="mt-12 p-6 bg-gradient-to-r from-blue-50 to-white rounded-xl shadow-md border border-blue-100">
+        <div className="mt-12 p-6 bg-gradient-to-r from-green-50 to-white rounded-xl shadow-md border border-green-100">
           <div className="flex items-start gap-4">
             {post.metadata.author.metadata.avatar && (
               <img
                 src={`${post.metadata.author.metadata.avatar.imgix_url}?w=160&h=160&fit=crop&auto=format,compress`}
                 alt={post.metadata.author.title}
-                className="w-20 h-20 rounded-full ring-2 ring-blue-200"
+                className="w-20 h-20 rounded-full ring-2 ring-green-200"
               />
             )}
             <div>
-              <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+              <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">
                 About {post.metadata.author.title}
               </h3>
               <p className="text-gray-600 mb-3">{post.metadata.author.metadata.bio}</p>
@@ -162,7 +162,7 @@ export default async function PostPage({
                     href={post.metadata.author.metadata.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                    className="text-green-600 hover:text-green-700 font-medium transition-colors"
                   >
                     Website
                   </a>
@@ -170,7 +170,7 @@ export default async function PostPage({
                 {post.metadata.author.metadata.email && (
                   <a 
                     href={`mailto:${post.metadata.author.metadata.email}`}
-                    className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                    className="text-green-600 hover:text-green-700 font-medium transition-colors"
                   >
                     Email
                   </a>

@@ -75,7 +75,7 @@ export default async function CategoryPage({
       <div className="mb-12">
         {category.metadata?.category_image && (
           <div className="relative rounded-xl overflow-hidden mb-6 shadow-2xl">
-            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-green-900/30 to-transparent"></div>
             <img
               src={`${category.metadata.category_image.imgix_url}?w=2400&h=600&fit=crop&auto=format,compress`}
               alt={category.title}
@@ -83,7 +83,7 @@ export default async function CategoryPage({
             />
           </div>
         )}
-        <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+        <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">
           {category.title}
         </h1>
         {category.metadata?.description && (
@@ -93,7 +93,7 @@ export default async function CategoryPage({
 
       {/* Posts Grid */}
       <div>
-        <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+        <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">
           Posts in {category.title}
         </h2>
         {posts.length === 0 ? (

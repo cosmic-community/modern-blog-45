@@ -73,16 +73,16 @@ export default async function AuthorPage({
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* Author Profile */}
       <div className="mb-12">
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-6 mb-8 bg-gradient-to-r from-blue-50 to-white p-8 rounded-xl shadow-md border border-blue-100">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-6 mb-8 bg-gradient-to-r from-green-50 to-white p-8 rounded-xl shadow-md border border-green-100">
           {author.metadata?.avatar && (
             <img
               src={`${author.metadata.avatar.imgix_url}?w=320&h=320&fit=crop&auto=format,compress`}
               alt={author.title}
-              className="w-40 h-40 rounded-full ring-4 ring-blue-200"
+              className="w-40 h-40 rounded-full ring-4 ring-green-200"
             />
           )}
           <div className="text-center md:text-left">
-            <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+            <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">
               {author.title}
             </h1>
             {author.metadata?.bio && (
@@ -94,7 +94,7 @@ export default async function AuthorPage({
                   href={author.metadata.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                  className="text-green-600 hover:text-green-700 font-medium transition-colors"
                 >
                   Website
                 </a>
@@ -102,7 +102,7 @@ export default async function AuthorPage({
               {author.metadata?.email && (
                 <a 
                   href={`mailto:${author.metadata.email}`}
-                  className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                  className="text-green-600 hover:text-green-700 font-medium transition-colors"
                 >
                   Email
                 </a>
@@ -114,7 +114,7 @@ export default async function AuthorPage({
 
       {/* Author's Posts */}
       <div>
-        <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+        <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">
           Posts by {author.title}
         </h2>
         {posts.length === 0 ? (
