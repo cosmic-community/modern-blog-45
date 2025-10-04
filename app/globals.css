@@ -4,16 +4,16 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-br from-blue-50 via-white to-blue-50 text-gray-900;
+    @apply bg-gradient-to-br from-green-50 via-white to-green-50 text-gray-900;
   }
 }
 
 @layer utilities {
-  .gradient-blue {
-    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  .gradient-green {
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
   }
   
-  .gradient-blue-light {
-    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  .gradient-green-light {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
   }
 }
